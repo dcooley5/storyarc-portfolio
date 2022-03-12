@@ -1,0 +1,118 @@
+body {
+    background-color: #ffffff;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2e2e2e;
+  }
+  
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+h2 {
+    font-size: 2.25em;
+    font-weight: 500;
+  }
+  
+h3 {
+    font-size: 1.75em;
+    font-weight: 500;
+  }
+  
+h4 {
+    font-size: 1.35em;
+    font-weight: 700;
+  }
+  
+img {
+    width: 100%;
+  }
+
+a {
+    color: #0077E4;
+  }
+
+.button.contact {
+    background-color: #D17C3F;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+.button.contact:hover {
+    background-color: #E79356;
+    color: #ffffff;
+  }
+  
+.button {
+    background-color: #D17C3F;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+.button:hover {
+    background-color: #E79356;
+    color: #ffffff;
+  }
+  
+.button.resume {
+    background-color: #D17C3F;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+.button.resume:hover {
+    background-color: #E79356;
+    color: #ffffff;
+  }
+
+.button.readmore {
+    background-color: #D17C3F;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+.button.readmore:hover {
+    background-color: #E79356;
+    color: #ffffff;
+  }
+
+#heroSection {
+    background-color: #2D3144;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+#projectSections {
+    background-color: #ffffff;
+    color: #2e2e2e;
+    padding: 40px;
+    text-align: left;
+}
+
+
+
+
+        
