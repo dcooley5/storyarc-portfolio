@@ -5,6 +5,7 @@ header {
     padding-bottom: 15px;
     padding-left: 5px;
     margin: 10px auto;
+    text-align: unset;
   }
 
   selector {
@@ -100,6 +101,7 @@ a {
     border-radius: 4px;
     display: inline-block;
     font-size: 16px;
+    transition: 0.2s opacity;
   }
   
 .button:hover {
@@ -144,45 +146,47 @@ a {
   padding: 0 15px;
 }
 
-.col-sm-6 {
-  width: 50%;
-}
-.col-sm-12 {
-  width: 100%;
-}
-
-.col-md-4 {
-  width: 33.33%;
-}
 .col-md-6 {
   width: 50%;
-  padding-right: 20px;
-}
-.col-md-6.image {
-  text-align: right;
-}
-.col-md-6 img {
-  max-width: 470px;
-}
-.col-md-6 svg {
-  max-width: 470px;
+  float: left;
 }
 
-.col-lg-8 {
+.col-lg-7 {
   width: 60%;
+  float: left;
 }
 
-.col-lg-4 {
+.col-lg-5 {
   width: 40%;
 }
-.col-lg-2 {
-  width: 15%;
+
+.col-lg-7 {
+  width: 60%;
+  float: left;
+}
+
+.col-lg-5 {
+  width: 40%;
+  float: right;
 }
 
 .center {
     text-align: center;
 }
 
+.dcskyline {
+  animation-duration: 4s;
+  animation-name: dc_skyline;
+  animation-iteration-count:initial;
+  animation-direction: alternate;
+  animation-timing-function:cubic-bezier(1, 0, 0, 1)
+}
+
+
+ @keyframes dc_skyline {
+    from {transform: scale(0,2.0);}
+    to {transform: scale(2.0,1.0);}
+  }
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -231,6 +235,15 @@ a {
     width: 100%;
 }
 
+#hero span {
+  display: block;
+}
+
+#hero {
+  display: block;
+  max-width: 75%;
+}
+
 #projectSection {
     background-color: #ffffff;
     color: #2e2e2e;
@@ -245,4 +258,69 @@ a {
   padding: 0.67em;
 }
 
-        
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}        
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+  nav {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    line-height: 100%;
+    font-size: 3em;
+    font-weight: 700;
+  }
+
+  h2 {
+    line-height: normal;
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  h3 {
+    line-height: normal;
+    font-size: 1.75em;
+    font-weight: 500;
+  }
+
+  h4 {
+    line-height: normal;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  li p {
+    font-size: 1.75em;
+  }
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+nav {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
