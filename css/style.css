@@ -8,10 +8,6 @@ header {
     text-align: unset;
   }
 
-  selector {
-    position: relative;
-  }
-
  * {
     box-sizing: border-box;
   }
@@ -144,30 +140,7 @@ a {
 .container {
   max-width: 1200px;
   padding: 0 15px;
-}
-
-.col-md-6 {
-  width: 50%;
-  float: left;
-}
-
-.col-lg-7 {
-  width: 60%;
-  float: left;
-}
-
-.col-lg-5 {
-  width: 40%;
-}
-
-.col-lg-7 {
-  width: 60%;
-  float: left;
-}
-
-.col-lg-5 {
-  width: 40%;
-  float: right;
+  margin: auto;
 }
 
 .center {
@@ -258,6 +231,15 @@ a {
   padding: 0.67em;
 }
 
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -274,12 +256,24 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
   }
-}        
 
+  .col-md-6 {
+    width: 50%;
+  }
+      
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+}
+
+
+.col-lg-7 {
+  width: 60%;
+}
+
+.col-lg-5 {
+  width: 40%;
 }
 
   nav {
@@ -316,15 +310,6 @@ Large devices (1024px or larger)
     font-size: 1.75em;
   }
 
-  .col-lg-7 {
-    width: 60%;
-    float: left;
-  }
-
-  .col-lg-5 {
-    width: 40%;
-  }
-
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
@@ -339,10 +324,8 @@ nav {
 
 .col-lg-7 {
   width: 60%;
-  float: left;
 }
 
 .col-lg-5 {
   width: 40%;
-  float: right;
 }
