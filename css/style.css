@@ -155,9 +155,11 @@ a {
     to {transform: scale(2.0,1.0);}
   }
 
-
+  .icon {
+    margin-top: 20px;
+  }
 .logo {
-  max-width: 65px;
+  max-width: 240px;
 }
 
 .navtoggle li:not(:last-child) {
@@ -174,8 +176,9 @@ a {
 }
 
 .navtoggle.responsive li {
+  text-align: right;
   display: block;
-  padding: 10px 0;
+  padding: 15px 0;
   border-top: 1px solid rgba(255,127,80,0.5)
 }
 
@@ -269,6 +272,15 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 240px
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -295,10 +307,6 @@ Large devices (1024px or larger)
 
 .col-lg-5 {
   width: 40%;
-}
-
-.logo {
-  min-width: 641px
 }
 
   nav {
@@ -353,8 +361,4 @@ nav {
 
 .col-lg-5 {
   width: 40%;
-}
-
-.logo {
-  min-width: 641px
 }
