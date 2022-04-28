@@ -1,12 +1,11 @@
 header {
     background-color: #D17C3F;
-    padding-top: 10px;
-    padding-right: 5px;
-    padding-bottom: 15px;
-    padding-left: 5px;
-    margin: 10px auto;
-    text-align: unset;
-  }
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    color: inherit;
+    padding: 10px 0 4px;
+}
 
  * {
     box-sizing: border-box;
@@ -133,11 +132,10 @@ a {
     color: #ffffff;
   }
 
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: auto;
+  .container {
+    padding: 0 15px;
 }
+
 
 .center {
     text-align: center;
@@ -159,9 +157,8 @@ a {
 
 
 .logo {
-    max-width: 125px;
-    max-height: 150px;
-  }
+  max-width: 65px;
+}
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -252,7 +249,8 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-  }
+    padding: 20px 0 13px;
+}
 
   main {
     padding-top: 56px;
@@ -285,6 +283,11 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
 }
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .col-lg-7 {
   width: 60%;
